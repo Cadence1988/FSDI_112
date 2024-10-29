@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+<style>
+    img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+<h1>About Me</h1>
+<p>Ryan Marlow</p>
+
+<img src="{% static 'img/self.jpg' %}" alt="Profile picture">
+{% endblock content %}
